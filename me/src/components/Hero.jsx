@@ -2,6 +2,7 @@ import meImage from '../assets/me.png';
 import { useState } from 'react';
 import { FaFacebook, FaGithub, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import StarBackground from './StarBackground';
 
 const Home = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -35,17 +36,7 @@ const Home = () => {
 
   return (
     <div id="home" className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Background dots with fade-in animation */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-        className="absolute inset-0" 
-        style={{
-          backgroundImage: 'radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }}
-      ></motion.div>
+      <StarBackground />
 
       <div className="container mx-auto px-4 min-h-screen relative">
         {/* Left side content with slide-in animation */}
@@ -79,26 +70,6 @@ const Home = () => {
             </motion.span>
           </h1>
           
-          {/* Social icons with stagger animation */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="flex space-x-6 my-6"
-          >
-            {socialLinks.map((link) => (
-              <a
-                key={link.id}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-orange-400"
-              >
-                <i className="fab fa-facebook-f text-xl"></i>
-              </a>
-            ))}
-          </motion.div>
-
           {/* Contact button with hover animation */}
           <motion.div 
             initial={{ opacity: 0 }}

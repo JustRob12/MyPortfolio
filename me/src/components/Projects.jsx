@@ -2,6 +2,7 @@ import acetrackImage from '../assets/acetrack.png';
 import quickbitesImage from '../assets/quickbites.png';
 import canteenImage from '../assets/canteen.png';
 import { motion } from 'framer-motion';
+import StarBackground from './StarBackground';
 
 const Projects = () => {
   const projectData = [
@@ -51,7 +52,8 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="min-h-screen bg-black text-white relative py-20">
+    <div id="projects" className="min-h-screen bg-black text-white relative overflow-hidden py-20">
+      <StarBackground />
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

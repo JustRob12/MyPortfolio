@@ -4,10 +4,12 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { FaRegWindowMaximize } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import StarBackground from './StarBackground';
 
 const About = () => {
   return (
-    <div id="about" className="min-h-screen bg-black text-white relative py-20">
+    <div id="about" className="min-h-screen bg-black text-white relative overflow-hidden py-20">
+      <StarBackground />
       {/* Animated dot pattern background */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -67,7 +69,7 @@ const About = () => {
             >
               <h3 className="text-orange-400 mb-2">My Name is</h3>
               <h2 className="text-3xl font-bold mb-6">Roberto M. Prisoris Jr.</h2>
-              
+　　 　 　 　
               <div className="space-y-4">
                 <motion.div 
                   initial={{ opacity: 0, x: -20 }}
