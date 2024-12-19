@@ -157,7 +157,7 @@ const Home = () => {
             transition={{ delay: 0.2 }}
             className="text-orange-400 text-xl"
           >
-            MULTIMEDIA
+            DEVELOPER
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
