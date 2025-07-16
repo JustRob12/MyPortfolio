@@ -1,5 +1,5 @@
 import m2Image from '../assets/me2.png';
-import { FaCamera } from "react-icons/fa";
+import { FaArrowAltCircleDown, FaArrowUp, FaCamera, FaDailymotion } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FaRegWindowMaximize } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
@@ -46,15 +46,15 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="max-w-xl mt-20"
+            className="max-w-xl mt-10"
           >
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-gray-300 mb-12"
+              className="text-gray-300 mb-9"
             >
-              I am a passionate Photographer, Layout Artist, and Video Editor with a keen eye for
+              I am a passionate Layout Artist, Motion Graphics Editor, and Video Editor with a keen eye for
               detail and a love for storytelling through visuals. My work spans capturing stunning
               images, creating engaging designs, and editing dynamic videos, all with the goal
               of delivering impactful and visually compelling content.
@@ -71,15 +71,7 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Roberto M. Prisoris Jr.</h2>
 　　 　 　 　
               <div className="space-y-4">
-                <motion.div 
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.9 }}
-                  className="flex items-center gap-3"
-                >
-                  <i className="far fa-calendar text-orange-400"></i>
-                  <span>October 12, 2003</span>
-                </motion.div>
+            
                 <motion.div 
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -116,13 +108,13 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="grid grid-cols-4 gap-6 mt-20"
+          className="flex justify-center gap-20 mt-20"
         >
           {[
-            { icon: <FaCamera />, title: "Photographer" },
             { icon: <MdOutlineDesignServices />, title: "Layout Artist" },
             { icon: <FaRegWindowMaximize />, title: "UI Designer" },
-            { icon: <FaVideo />, title: "Video Editor" }
+            { icon: <FaVideo />, title: "Video Editor" },
+            { icon: <FaArrowUp />, title: "Motion Graphics" },
           ].map((skill, index) => (
             <motion.div
               key={index}

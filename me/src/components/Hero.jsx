@@ -20,12 +20,7 @@ const Home = () => {
       url: 'https://www.instagram.com/me_robbb/',
       icon: <FaInstagram className="text-xl" />
     },
-    {
-      id: 3,
-      name: 'GitHub',
-      url: 'https://github.com/JustRob12',
-      icon: <FaGithub className="text-xl" />
-    },
+  
     {
       id: 4,
       name: 'TikTok',
@@ -129,14 +124,6 @@ const Home = () => {
               className="absolute w-[500px] h-[500px] bg-white rounded-full left-1/2 transform -translate-x-1/2"
             ></motion.div>
             <motion.img
-              animate={{ 
-                y: [0, -10, 0] 
-              }}
-              transition={{ 
-                repeat: Infinity, 
-                duration: 3,
-                ease: "easeInOut"
-              }}
               src={meImage}
               alt="Profile"
               className="relative left-60 z-20 max-w-[450px]"
@@ -155,15 +142,15 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-orange-400 text-xl"
+            className="text-orange-400 text-[50px]"
           >
-            DEVELOPER
+            Graphics
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-[80px] font-bold mt-2 tracking-wider"
+            className="text-[80px] font-bold tracking-wider"
           >
             DESIGNER
           </motion.h2>
